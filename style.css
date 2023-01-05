@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+
+:root{
+    --color1: #20ADD0;
+    --color2: #60DCE0;
+    --color3: #E0F2E9;
+    --color4: #FFEED5;
+    --color5: #D0E2D0
+    
+}
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box; 
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+html{scroll-behavior: smooth;}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#navBar{
+    width: 100%;
+    background: #FFFFFF;
+    text-align: center;
+}
+#navBar ul{
+    text-align: center;
+    margin: 0 auto;
+}
+#navBar li{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    position: relative;
+}
+#navBar a{
+    cursor: pointer;
+  text-decoration: none;
+  border-bottom: 0;
+  position: relative;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s, color 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+#navBar a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    background: black;
+  }
+#navBar a:hover {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+} 
+#navBar a:hover::before {
+    transform: scale3d(1, 1, 1);
+    transform-origin: 0% 50%;
+    transition-timing-function: ease-out;
+}
+
+ .dropdown{
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    background: #FFFFFF;
+    margin: 0 0 0 0;
+    
+}
+
+.dropdown li{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.dropdown a{
+    font-size: .8em;
+}
+#navBar a:hover ~ .dropdown{
+    height: auto;
+    transition: 0.2s;
+    overflow: auto;
+}
+.dropdown:hover{
+    height: auto;
+    overflow: auto;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+}
+#titlepage{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    height: 70vh;
+    background-image: url("Photos/flag.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #111111;
+    
+}
+#titlepage h1{
+    font-size: 9em;
+    font-weight: 300;
+}
+#titlepage h3{
+    font-size: 2em;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.qBlock{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.hBlock{
+    width: 50%;
+}
+#services{
+    height: 50vh;
+}
+#services .backgroundblock{
+    
+}
+#services .qBlock:nth-child(1){
+    background: var(--color1);
+    background-image: url("Photos/couple1.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+    transition-timing-function: ease;
+    text-shadow: 0 0 15px #000000, 0 0 4px #000000;
+    color: #FFFFFF;
+}
+#services .qBlock:nth-child(1):hover{
+    background-size: 120%;
+    background-position-x: -40px;
+}
+#services .qBlock:nth-child(2){
+    background: var(--color2);
+}
+#services .qBlock:nth-child(3){
+    background: var(--color3);
+    background-image: url("Photos/couple2_50.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+    transition-timing-function: ease;
+    text-shadow: 0 0 15px #000000, 0 0 5px #000000;
+    color: #FFFFFF;
+}
+#services .qBlock:nth-child(3):hover{
+    background-size: auto 110%;
+    background-position-x: -100px;
+}
+#services .qBlock:nth-child(4){
+    background: var(--color4);
+}
+.qBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+.hBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blockCount{
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    font-weight: 400;
+}
+.blockTitle{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+.blockBody{
+    font-size: 1em;
+    padding: 20px 60px 0 60px;
+    font-weight: 300;
+}
+.blockReadMore{
+    margin: 30px 0 0 0;
+    text-decoration: underline;
+}
+#aboutMe{
+    height: 50vh;
+}
+#aboutMe .qBlock:nth-child(3) {
+    background: var(--color5);
+}
+#aboutMe .image {
+    overflow: hidden;
+}
+#aboutMe .image img{
+    margin: 0 0 0 0;
+}
+
+img{
+    height: 100%;
+    max-height: 100%;
+}
+
+#testimonialSection{
+    position: relative;
+    height: 50vh;
+    width: 400%;
+    background: var(--color4);
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    animation-name: carousel;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+    background: var(--color4);
+}
+
+@keyframes carousel {
+    0%  {transform: translateX(0em);}
+    24% {transform: translateX(0em);}
+    25% {transform: translateX(-100%);}
+    49% {transform: translateX(-100%);}
+    50% {transform: translateX(-200%);}
+    74% {transform: translateX(-200%);}
+    75% {transform: translateX(-300%);}
+    99% {transform: translateX(-300%);}
+    99.0001%{transform: translateX(100%);}
+    100% {transform: translateX(0%);}
+  }
+
+.testimonialBody{
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 50%;
+    padding: 0 0 20px 0;
+}
+.testimonialBody::before{
+    content: '" ';
+}
+.testimonialBody::after{
+    content: ' "';
+}
+.testimonialSource{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.testimonialSource::before{
+    content:'- ';
+}
+
+#footer{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+}
+#contactForm input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-size: 1.2em;
+    margin: 15px 0 0 0;
+    padding: 5px;
+}
+#contactForm textarea{
+    margin: 15px 0 0 0;
+    height: 10em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333333;
+    padding: 5px;
+    resize: none;
+}
+#contactForm textarea:focus{
+    border: 1px solid #333333;
+    
+}
+#contactForm button{
+    background: transparent;
+    padding: 5px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 15px 0 0 0;
+    width: auto;
+}
+#contactForm button:hover{
+    background: var(--color2);
+}
+#contactForm button:active{
+    background: var(--color1);
+}
+#footer{
+    background: #FFFFFF;
+}
