@@ -83,7 +83,6 @@ a{
     background: #FFFFFF;
     margin: 0 0 0 0;
     z-index: 5;
-    
 }
 
 .dropdown li{
@@ -114,13 +113,17 @@ a{
     background: lightblue;
     height: 70vh;
     background-image: url("Photos/flag.jpg");
-    background-attachment: fixed;
-    background-position: center;
+    /*background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 120%;
     color: #111111;
     
 }
+
 #titlepage h1{
     font-size: 9em;
     font-weight: 300;
@@ -284,10 +287,11 @@ a{
     display: flex;
     width: 100%;
     justify-content: center;
+    min-height: 50vh;
+    padding: 20px 0;
 }
 #footer{
     width: 50%;
-    height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
