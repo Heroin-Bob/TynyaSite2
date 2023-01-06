@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 :root{
     --color1: #20ADD0;
@@ -81,6 +82,7 @@ a{
     transition: 0.2s;
     background: #FFFFFF;
     margin: 0 0 0 0;
+    z-index: 5;
     
 }
 
@@ -215,8 +217,9 @@ a{
     height: 50vh;
 }
 #aboutMe .qBlock:nth-child(2){
+    background: #c6c6c8;
     background-image: url("Photos/Tynya_Patton.jpg");
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -224,17 +227,6 @@ a{
 #aboutMe .qBlock:nth-child(3) {
     background: var(--color5);
 }
-#aboutMe .image {
-    overflow: hidden;
-}
-#aboutMe .image img{
-    margin: 0 auto;
-}
-
-img{
-    height: 120%;
-}
-
 #testimonialSection{
     position: relative;
     height: 50vh;
@@ -288,18 +280,45 @@ img{
 .testimonialSource::before{
     content:'- ';
 }
-
+#footerWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 #footer{
+    width: 50%;
     height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-
+#footerAlign{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: top;
+}
+#footer .details{
+    display: flex;
+    flex-direction: column;
+    
+}
+#footer .details .info{
+}
+#footer .details .links{
+    display: flex;
+    flex-direction: column;
+}
+#footer .details .links a{
+    text-decoration: underline;
+    padding: 3px 0;
+}
 #contactForm{
     display: flex;
     flex-direction: column;
+    background: #EEEEEE;
+    padding: 20px;
 }
 #contactForm input{
     outline: none;
@@ -340,4 +359,60 @@ img{
 }
 #footer{
     background: #FFFFFF;
+}
+.articleWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #eeeeee;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background: #ffffff;
+    padding: 20px;
+    transition: 0.2s;
+}
+.articleTitle{
+    width: 100%;
+    text-align: left;
+    color: var(--color1);
+}
+.articleTitle h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.articleBody{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.articleBody p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.articleCover{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #333333;
+    margin: 10px 0;
+    background-image: url("Photos/heart2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.articleCover h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 20px;
+    font-weight: 400;
 }
