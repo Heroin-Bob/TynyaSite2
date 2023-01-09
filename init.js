@@ -8,10 +8,11 @@ document.getElementById("navBar").innerHTML = `<ul>
     <a href="#services">Counseling Services</a>
     <div class="dropdown">
         <ul>
-            <li><a href="#">Service One</a></li>
-            <li><a href="#">Service Two</a></li>
-            <li><a href="#">Service Three</a></li>
-            <li><a href="#">Service Four</a></li>
+            <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+            <li><a href="Depression.html">Depression</a></li>
+            <li><a href="Anxiety.html">Anxiety</a></li>
+            <li><a href="Grief.html">Grief</a></li>
+            <li><a href="Trauma.html">Trauma</a></li>
         </ul>
     </div>
 </li>
