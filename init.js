@@ -13,6 +13,7 @@ document.getElementById("navBar").innerHTML = `<ul>
             <li><a href="Anxiety.html">Anxiety</a></li>
             <li><a href="Grief.html">Grief</a></li>
             <li><a href="Trauma.html">Trauma</a></li>
+            <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
         </ul>
     </div>
 </li>
@@ -28,8 +29,18 @@ document.getElementById("footerWrapper").innerHTML = `
                 <p>Tynya Patton, LPC</p>
                 <p>She/Her/Hers</p>
                 <p>Nashville, TN</p>
+                <br>
+                <p><b>Hours</b></p>
+                <p>I conduct online appointments only. My hours are:</p>
+                <p>M-F from 10 am to 7 pm</p>
+                <br>
+                <p><b>Insurance and fees:</b></p>
+                <p>I take Aetna and Cigna/ Evernorth - your copay will be decided by your insurance company.</p>
+                <p>I also accept self-pay clients. The fee is $110 per 55 minute session.</p>
             </div>
+            <br>
             <div class="links">
+                <p><b>Other Links:</b></p>
                 <a href="https://www.loveislove-blog.com/">loveislove-blog.com</a>
                 <a href="https://caringtherapytn.com/">caringtherapytn.com</a>
             </div>    
@@ -46,4 +57,15 @@ document.getElementById("footerWrapper").innerHTML = `
         </form>
         </div>
     </div>
-`
+`;
+
+document.getElementById("resourceLinksWrapper").innerHTML = `
+<ul class="resourceLinks">
+<li><a href="BeingLGBTQIA.html">Being LGBTQIA+</a></li>
+<li><a href="LGBTQIAResources.html">Resources for LGBTQIA+</a></li>
+<li><a href="CopingSkills.html">Coping Skills for LGBTQIA+</a></li>
+<li><a href="QuestionstoAsk.html">Questions to Ask</a></li>
+<li><a href="Privacy.html">Privacy</a></li>
+<li><a href="CommonTerms.html">Common Terms Used</a></li>
+</ul>
+`;
