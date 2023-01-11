@@ -1,5 +1,5 @@
-
-document.getElementById("navBar").innerHTML = `<ul>
+window.onload = (event) => {
+    document.getElementById("navBar").innerHTML = `<ul>
 <li><a href="index.html">Home</a></li>
 <li>
     <a href="about me.html">About Me</a>
@@ -69,3 +69,4 @@ document.getElementById("resourceLinksWrapper").innerHTML = `
 <li><a href="CommonTerms.html">Common Terms Used</a></li>
 </ul>
 `;
+  };
