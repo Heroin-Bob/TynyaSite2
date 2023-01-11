@@ -1,27 +1,37 @@
+function movePopup(){
+    document.getElementById("popupAlert").style.top = "-9999px";
+}
+
+document.addEventListener('keydown',(e) =>{
+    if (e.key === "Escape"){
+        window.location.href = "https://www.google.com/"
+    }
+},false);
+
 window.onload = (event) => {
     document.getElementById("navBar").innerHTML = `<ul>
-<li><a href="index.html">Home</a></li>
-<li>
-    <a href="about me.html">About Me</a>
-</li>
-<li>
-    <a href="#services">Counseling Services</a>
-    <div class="dropdown">
-        <ul>
-            <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
-            <li><a href="Depression.html">Depression</a></li>
-            <li><a href="Anxiety.html">Anxiety</a></li>
-            <li><a href="Grief.html">Grief</a></li>
-            <li><a href="Trauma.html">Trauma</a></li>
-            <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
-        </ul>
-    </div>
-</li>
-<li><a href="https://www.loveislove-blog.com/">Blog</a></li>
-<li><a href="#footer">Contact</a></li>
-</ul>`;
+    <li><a href="index.html">Home</a></li>
+    <li>
+        <a href="about me.html">About Me</a>
+    </li>
+    <li>
+        <a href="#services">Counseling Services</a>
+        <div class="dropdown">
+            <ul>
+                <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+                <li><a href="Depression.html">Depression</a></li>
+                <li><a href="Anxiety.html">Anxiety</a></li>
+                <li><a href="Grief.html">Grief</a></li>
+                <li><a href="Trauma.html">Trauma</a></li>
+                <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="https://www.loveislove-blog.com/">Blog</a></li>
+    <li><a href="#footer">Contact</a></li>
+    </ul>`;
 
-document.getElementById("footerWrapper").innerHTML = `
+    document.getElementById("footerWrapper").innerHTML = `
     <div id="footer">
         <div id="footerAlign">
         <div class="details">
@@ -57,7 +67,7 @@ document.getElementById("footerWrapper").innerHTML = `
         </form>
         </div>
     </div>
-`;
+    `;
 
 document.getElementById("resourceLinksWrapper").innerHTML = `
 <ul class="resourceLinks">
@@ -65,8 +75,8 @@ document.getElementById("resourceLinksWrapper").innerHTML = `
 <li><a href="LGBTQIAResources.html">Resources for LGBTQIA+</a></li>
 <li><a href="CopingSkills.html">Coping Skills for LGBTQIA+</a></li>
 <li><a href="QuestionstoAsk.html">Questions to Ask</a></li>
-<li><a href="Privacy.html">Privacy</a></li>
 <li><a href="CommonTerms.html">Common Terms Used</a></li>
+<li><a href="Privacy.html">Privacy</a></li>
 </ul>
 `;
   };
