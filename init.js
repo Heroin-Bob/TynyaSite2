@@ -1,13 +1,3 @@
-function movePopup(){
-    document.getElementById("popupAlert").style.top = "-9999px";
-}
-
-document.addEventListener('keydown',(e) =>{
-    if (e.key === "Escape"){
-        window.location.href = "https://www.google.com/"
-    }
-},false);
-
 window.onload = (event) => {
     document.getElementById("navBar").innerHTML = `<ul>
     <li><a href="index.html">Home</a></li>
