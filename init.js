@@ -60,13 +60,16 @@ window.onload = (event) => {
     `;
 
 document.getElementById("resourceLinksWrapper").innerHTML = `
+<img src="Photos/love2.jpg" alt="">
+
 <ul class="resourceLinks">
-<li><a href="BeingLGBTQIA.html">Being LGBTQIA+</a></li>
-<li><a href="LGBTQIAResources.html">Resources for LGBTQIA+</a></li>
-<li><a href="CopingSkills.html">Coping Skills for LGBTQIA+</a></li>
-<li><a href="QuestionstoAsk.html">Questions to Ask</a></li>
-<li><a href="CommonTerms.html">Common Terms Used</a></li>
-<li><a href="Privacy.html">Privacy</a></li>
+<h2>Helpful Pages</h2>
+<a href="BeingLGBTQIA.html">Being LGBTQIA+</a></li>
+<a href="LGBTQIAResources.html">Resources for LGBTQIA+</a>
+<a href="CopingSkills.html">Coping Skills for LGBTQIA+</a>
+<a href="QuestionstoAsk.html">Questions to Ask</a>
+<a href="CommonTerms.html">Common Terms Used</a>
+<a href="Privacy.html">Privacy</a>
 </ul>
 `;
   };

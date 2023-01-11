@@ -400,12 +400,19 @@ a{
 #footer{
     background: #FFFFFF;
 }
+
+
+
+/*Article styling*/
+
+
 .articleWrapper{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
     width: 100%;
-    background: #eeeeee;
+    background: #ffffff;
     border-top: 1px solid var(--color1);
     border-bottom: 1px solid var(--color1);
 }
@@ -433,8 +440,7 @@ a{
 }
 
 .articleBody p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 1.4em;
     line-height: 1.5em;
 }
 
@@ -443,7 +449,6 @@ a{
     width: 100%;
     height: 250px;
     background: #333333;
-    margin: 10px 0;
     background-image: url("Photos/heart2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -461,8 +466,10 @@ a{
 }
 .articleBody li{
     list-style: circle;
-    margin: 5px 0 0 2em;
+    margin: 15px 0 0 2em;
     text-align: left;
+    font-size: 1.2em;
+    
 }
 
 .articleBody a{
@@ -472,18 +479,39 @@ a{
 .articleBody a:hover{
     color: #333333;
 }
-
-.resourceLinks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#resourceLinksWrapper{
+    width: 20%;
     border: 1px solid #333333;
+    
+}
+.resourceLinks{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     margin: 10px;
-}
-.resourceLinks li{
     list-style: none;
-    text-decoration: underline;
+    margin: 15px;
+}
+.resourceLinks a:hover{
+    background: var(--color2);
+}
+.resourceLinks a:first-child{
+    margin-top: 0;
+}
+.resourceLinks a:last-child{
+    margin-bottom: 0;
+}
+.resourceLinks a{
+    padding: 20px 10px 20px 10px;
+    background: #aeebfc;
+    margin: 10px 0;
+    font-size: 20px;
+    border-left: 10px solid var(--color1);
+    border-right: 4px solid #333333;
+}
+.articleWrapper img{
+    width: 100%;
 }
 
 @media screen and (max-width: 1180px) {
