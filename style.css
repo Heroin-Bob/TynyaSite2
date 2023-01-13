@@ -29,22 +29,22 @@ a{
     color: inherit;
 }
 
-#navBar{
+#navBar #fullNav{
     width: 100%;
     background: #FFFFFF;
     text-align: center;
 }
-#navBar ul{
+#navBar #fullNav{
     text-align: center;
     margin: 0 auto;
 }
-#navBar li{
+#fullNav li{
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     position: relative;
 }
-#navBar a{
+#fullNav a{
     cursor: pointer;
   text-decoration: none;
   border-bottom: 0;
@@ -54,7 +54,7 @@ a{
   transition: transform 1s, color 0.5s;
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-#navBar a::before {
+#fullNav a::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -67,17 +67,17 @@ a{
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     background: black;
   }
-#navBar a:hover {
+#fullNav a:hover {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 } 
-#navBar a:hover::before {
+#fullNav a:hover::before {
     transform: scale3d(1, 1, 1);
     transform-origin: 0% 50%;
     transition-timing-function: ease-out;
 }
 
- .dropdown{
+#fullNav .dropdown{
     position: absolute;
     height: 0;
     overflow: hidden;
@@ -87,23 +87,77 @@ a{
     z-index: 5;
 }
 
-.dropdown li{
+#fullNav .dropdown li{
     display: block;
     width: 100%;
     text-align: left;
 }
-.dropdown a{
+#fullNav .dropdown a{
     font-size: .8em;
 }
-#navBar a:hover ~ .dropdown{
+#fullNav a:hover ~ .dropdown{
     height: auto;
     transition: 0.2s;
     overflow: auto;
 }
-.dropdown:hover{
+#fullNav .dropdown:hover{
     height: auto;
     overflow: auto;
 }
+
+
+
+#mobileNav{
+    position: relative;
+    width: 100%;
+    background: #333333;
+    color: #FFFFFF;
+    font-weight: 200;
+    padding: 10px;
+    font-size: 15px;
+    max-height: 48px;
+    transition: 0.2s;
+    z-index: 11;
+    overflow-y: hidden;
+}
+#mobileMenu{
+    padding: 8px 0 0 0;
+    
+}
+#mobileMenu::after{
+    content: "+";
+    float: right;
+}
+#mobileNav li{
+    list-style: none;
+    padding: 15px;
+}
+#mobileNav > ul{
+    margin-left: 10px;
+}
+
+#mobileNav .dropdown{
+    max-height: 0px;
+    overflow-y: hidden;
+}
+#mobileNav .dropdown:active{
+    max-height: 100vh;
+}
+
+#mobileNav #navServices .dropdown{
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: 0.2s;
+    border-left: 3px solid #AAAAAA;
+}
+#mobileNav #navServices:hover ~ .dropdown{
+    max-height: 100vh;
+}
+
+
+
+
+
 .section{
     display: flex;
     flex-direction: row;
@@ -533,6 +587,7 @@ a{
     #services .qBlock:nth-child(1){
         background-size: 110%;
     }
+    
 }
 
 @media screen and (max-width: 950px){
@@ -550,6 +605,18 @@ a{
     .article{
         width: 80%;
     }
+    .articleWrapper{
+        flex-direction: column;
+    }
+    #resourceLinksWrapper{
+        width: 100%;
+    }
+    .resourceLinks{
+        width: 95%;
+    }
+    #resourcePhoto{
+        display: none;
+    }
 }
 @media screen and (max-width: 800px){
     #titlepage h1{
@@ -563,9 +630,7 @@ a{
     }
 }
 @media screen and (max-width: 700px){
-    #navBar a{
-        font-size: 15px;
-    }
+    
     #titlepage h1{
         font-size: 55px;
     }
@@ -653,6 +718,5 @@ a{
         padding: 20px;
     }
 }
-@media screen and (max-width: 560px){
-
+@media screen and (max-width: 500px){    
 }

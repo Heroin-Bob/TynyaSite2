@@ -1,25 +1,61 @@
 window.onload = (event) => {
-    document.getElementById("navBar").innerHTML = `<ul>
-    <li><a href="index.html">Home</a></li>
-    <li>
-        <a href="about me.html">About Me</a>
-    </li>
-    <li>
-        <a href="#services">Counseling Services</a>
-        <div class="dropdown">
-            <ul>
-                <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
-                <li><a href="Depression.html">Depression</a></li>
-                <li><a href="Anxiety.html">Anxiety</a></li>
-                <li><a href="Grief.html">Grief</a></li>
-                <li><a href="Trauma.html">Trauma</a></li>
-                <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
-            </ul>
-        </div>
-    </li>
-    <li><a href="https://www.loveislove-blog.com/">Blog</a></li>
-    <li><a href="#footer">Contact</a></li>
-    </ul>`;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    if (width > 641){
+        document.getElementById("navBar").innerHTML = `
+            <ul id="fullNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li>
+                    <a href="#services">Counseling Services</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+                            <li><a href="Depression.html">Depression</a></li>
+                            <li><a href="Anxiety.html">Anxiety</a></li>
+                            <li><a href="Grief.html">Grief</a></li>
+                            <li><a href="Trauma.html">Trauma</a></li>
+                            <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.loveislove-blog.com/">Blog</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>`;
+    } else {
+        document.getElementById("navBar").innerHTML = `
+            <ul id="mobileNav">
+                <h1 id="mobileMenu">Menu</h1>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li>
+                    <a href="#services" id="navServices">Counseling Services</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+                            <li><a href="Depression.html">Depression</a></li>
+                            <li><a href="Anxiety.html">Anxiety</a></li>
+                            <li><a href="Grief.html">Grief</a></li>
+                            <li><a href="Trauma.html">Trauma</a></li>
+                            <li><a href="BipolarDisorder.html">Bipolar Disorder</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.loveislove-blog.com/">Blog</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>`;
+            var mobMenu = document.getElementById("mobileMenu");
+            var mobNav = document.getElementById("mobileNav");
+
+            mobMenu.addEventListener("click", function(){
+                if (mobNav.style.maxHeight == "100vh"){
+                    mobNav.style.maxHeight = "48px";
+                } else {
+                    mobNav.style.maxHeight = "100vh";
+                }
+            });
+    }
+    
 
     document.getElementById("footerWrapper").innerHTML = `
     <div id="footer">
@@ -58,18 +94,28 @@ window.onload = (event) => {
         </div>
     </div>
     `;
+    try {
+        document.getElementById("resourceLinksWrapper").innerHTML = `
+            <img src="Photos/love2.jpg" id="resourcePhoto" alt="">
 
-document.getElementById("resourceLinksWrapper").innerHTML = `
-<img src="Photos/love2.jpg" alt="">
+            <ul class="resourceLinks">
+            <h2>Helpful Pages</h2>
+            <a href="BeingLGBTQIA.html">Being LGBTQIA+</a></li>
+            <a href="LGBTQIAResources.html">Resources for LGBTQIA+</a>
+            <a href="CopingSkills.html">Coping Skills for LGBTQIA+</a>
+            <a href="QuestionstoAsk.html">Questions to Ask</a>
+            <a href="CommonTerms.html">Common Terms Used</a>
+            <a href="Privacy.html">Privacy</a>
+            </ul>
+            `;
+    }
+    catch {}
 
-<ul class="resourceLinks">
-<h2>Helpful Pages</h2>
-<a href="BeingLGBTQIA.html">Being LGBTQIA+</a></li>
-<a href="LGBTQIAResources.html">Resources for LGBTQIA+</a>
-<a href="CopingSkills.html">Coping Skills for LGBTQIA+</a>
-<a href="QuestionstoAsk.html">Questions to Ask</a>
-<a href="CommonTerms.html">Common Terms Used</a>
-<a href="Privacy.html">Privacy</a>
-</ul>
-`;
+
+    try{
+        
+      }
+      catch (e){
+        alert(e);
+      }
   };
