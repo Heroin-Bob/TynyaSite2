@@ -120,10 +120,6 @@ a{
     z-index: 11;
     overflow-y: hidden;
 }
-#mobileMenu{
-    padding: 8px 0 0 0;
-    
-}
 #mobileMenu::after{
     content: "+";
     float: right;
@@ -150,7 +146,7 @@ a{
     transition: 0.2s;
     border-left: 3px solid #AAAAAA;
 }
-#mobileNav #navServices:hover ~ .dropdown{
+#mobileNav #navServices:focus ~ .dropdown{
     max-height: 100vh;
 }
 
@@ -171,7 +167,7 @@ a{
     background-image: url("Photos/flag.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 120%;
+    background-size: cover;
     color: #111111;
     
 }
@@ -211,7 +207,7 @@ a{
 #services .qBlock:nth-child(1){
     background: var(--color1);
     background-image: url("Photos/couple1.jpeg");
-    background-size: 100%;
+    background-size: auto 150%;
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s;
@@ -220,7 +216,6 @@ a{
     color: #FFFFFF;
 }
 #services .qBlock:nth-child(1):hover{
-    background-size: 120%;
     background-position-x: -40px;
 }
 #services .qBlock:nth-child(2){
@@ -585,17 +580,14 @@ a{
         font-size: 8em;
     }
     #services .qBlock:nth-child(1){
-        background-size: 110%;
     }
     
 }
 
 @media screen and (max-width: 950px){
     #services .qBlock:nth-child(1){
-        background-size: 160%;
     }
     #services .qBlock:nth-child(1):hover{
-        background-size: 140%;
         background-position-x: -40px;
     }
     .blockBody{
@@ -635,7 +627,7 @@ a{
         font-size: 55px;
     }
     #titlepage{
-        background-size: 200%;
+        background-size: auto 200%;
         background-position: center;
     }
     #services{
