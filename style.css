@@ -304,6 +304,9 @@ a{
     align-items: center;
     flex-direction: column;
 }
+#aboutMe .hBlock{
+    background: var(--color4);
+}
 #aboutMe .qBlock:nth-child(1){
     background: #c6c6c8;
     background-image: url("Photos/Tynya_Patton.jpg");
@@ -412,6 +415,7 @@ a{
 #contactForm input{
     outline: none;
     border: none;
+    width: 100%;
     border-bottom: 1px solid #333333;
     font-size: 1.2em;
     margin: 15px 0 0 0;
