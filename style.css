@@ -411,6 +411,7 @@ a{
     flex-direction: column;
     background: #EEEEEE;
     padding: 20px;
+    width: 50%;
 }
 #contactForm input{
     outline: none;

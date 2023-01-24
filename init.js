@@ -64,6 +64,7 @@ window.onload = (event) => {
             <div class="info">
                 <p>Tynya Patton, LPC</p>
                 <p>She/Her/Hers</p>
+                <p><a style="text-decoration: underline;" href="mailto:tpattonlpc@gmail.com">tpattonlpc@gmail.com</a></p>
                 <p>Nashville, TN</p>
                 <br>
                 <p><b>Hours</b></p>
@@ -85,11 +86,10 @@ window.onload = (event) => {
             <h2 style="font-weight: 300;">Contact</h2>
             <div class="row">
                 <input type="text" id="formName" placeholder="Name"></input>
-                <input type="text" id="formEmail" placeholder="Email"></input>
             </div>
             <input type="text" id="formSubject" placeholder="Subject"></input>
             <textarea type="text" id="formBodyText" placeholder="Message"></textarea>
-            <button>Submit</button>
+            <button onclick="sendEmail()">Submit</button>
         </form>
         </div>
     </div>
@@ -119,3 +119,12 @@ window.onload = (event) => {
         alert(e);
       }
   };
+
+  function sendEmail(){
+    var email = "tpattonlpc@gmail.com";
+    var name = "Signed,\n-" + document.getElementById("formName").value;
+    var subject = document.getElementById("formSubject").value;
+    var emailBody = document.getElementById("formBodyText").value;
+    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + encodeURIComponent(emailBody + "\n\n" + name);
+  }
+  
