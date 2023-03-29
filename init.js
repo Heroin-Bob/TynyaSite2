@@ -72,7 +72,7 @@ window.onload = (event) => {
                 <p>M-F from 10 am to 7 pm</p>
                 <br>
                 <p><b>Fees:</b></p>
-                <p>The fee is $150 per 55 minute session.</p>
+                <p>The fee is $150 per 55 minute session.</p> 
             </div>
             <br>
             <div class="links">
