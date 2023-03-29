@@ -71,9 +71,8 @@ window.onload = (event) => {
                 <p>I conduct online appointments only. My hours are:</p>
                 <p>M-F from 10 am to 7 pm</p>
                 <br>
-                <p><b>Insurance and fees:</b></p>
-                <p>I take Aetna and Cigna/ Evernorth - your copay will be decided by your insurance company.</p>
-                <p>I also accept self-pay clients. The fee is $110 per 55 minute session.</p>
+                <p><b>Fees:</b></p>
+                <p>The fee is $150 per 55 minute session.</p>
             </div>
             <br>
             <div class="links">
