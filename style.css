@@ -204,7 +204,7 @@ a{
 #services{
     height: 50vh;
 }
-#services .qBlock:nth-child(1){
+#services .qBlock:nth-child(3){
     background: var(--color1);
     background-image: url("Photos/couple1.jpeg");
     background-size: auto 150%;
@@ -215,13 +215,13 @@ a{
     text-shadow: 0 0 15px #000000, 0 0 4px #000000;
     color: #FFFFFF;
 }
-#services .qBlock:nth-child(1):hover{
+#services .qBlock:nth-child(3):hover{
     background-position-x: -40px;
 }
 #services .qBlock:nth-child(2){
     background: var(--color2);
 }
-#services .qBlock:nth-child(3){
+#services .qBlock:nth-child(1){
     background: var(--color3);
     background-image: url("Photos/couple2_50.jpg");
     background-size: auto 100%;
@@ -232,7 +232,7 @@ a{
     text-shadow: 0 0 15px #000000, 0 0 5px #000000;
     color: #FFFFFF;
 }
-#services .qBlock:nth-child(3):hover{
+#services .qBlock:nth-child(1):hover{
     background-size: auto 110%;
     background-position-x: -100px;
 }

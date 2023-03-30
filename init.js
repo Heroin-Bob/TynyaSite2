@@ -11,6 +11,7 @@ window.onload = (event) => {
                     <div class="dropdown">
                         <ul>
                             <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+                            <li><a href="GenderDysphoria.html">Gender Dysphoria</a></li>
                             <li><a href="Depression.html">Depression</a></li>
                             <li><a href="Anxiety.html">Anxiety</a></li>
                             <li><a href="Grief.html">Grief</a></li>
@@ -33,6 +34,7 @@ window.onload = (event) => {
                     <div class="dropdown">
                         <ul>
                             <li><a href="LGBTQIACounseling.html">LGBTQIA+ Counseling</a></li>
+                            <li><a href="GenderDysphoria.html">Gender Dysphoria</a></li>
                             <li><a href="Depression.html">Depression</a></li>
                             <li><a href="Anxiety.html">Anxiety</a></li>
                             <li><a href="Grief.html">Grief</a></li>
