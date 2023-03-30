@@ -223,7 +223,7 @@ a{
 }
 #services .qBlock:nth-child(3){
     background: var(--color3);
-    background-image: url("Photos/couple1.jpg");
+    background-image: url("Photos/couple1.jpeg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
