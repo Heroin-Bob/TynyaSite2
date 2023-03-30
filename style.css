@@ -206,7 +206,7 @@ a{
 }
 #services .qBlock:nth-child(3){
     background: var(--color1);
-    background-image: url("Photos/couple1.jpeg");
+    background-image: url("Photos/transwelcomehere.jpg");
     background-size: auto 150%;
     background-repeat: no-repeat;
     background-position: center;
@@ -223,7 +223,7 @@ a{
 }
 #services .qBlock:nth-child(1){
     background: var(--color3);
-    background-image: url("Photos/couple2_50.jpg");
+    background-image: url("Photos/couple1.jpg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
